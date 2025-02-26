@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # my app
     'learning_logs',
+    'users',
     # default app
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,3 +122,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+LOGIN_URL ='users:login'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
